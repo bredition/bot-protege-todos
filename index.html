@@ -1,34 +1,171 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contato via WhatsApp — Protege TODOS</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protege Todos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .header {
+            background-color: #121f3d;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 10px;
+        }
+        .hero-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+        .hero-image:first-child {
+            background-image: url('https://via.placeholder.com/600x400?text=Imagem+1');
+            flex: 1;
+        }
+        .hero-image:nth-child(2) {
+            background-image: url('https://via.placeholder.com/600x400?text=Imagem+2');
+            flex: 1;
+        }
+        .content {
+            background-color: #1a2c58;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px;
+        }
+        .content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .whatsapp-button {
+            background-color: #25d366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+        .whatsapp-button img {
+            margin-right: 10px;
+        }
+        .input-group {
+            margin-top: 20px;
+        }
+        .input-group input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+        }
+        .footer-images {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 10px;
+        }
+        .footer-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+        .footer-image:first-child {
+            background-image: url('https://via.placeholder.com/600x400?text=Imagem+3');
+            flex: 1;
+        }
+        .footer-image:nth-child(2) {
+            background-image: url('https://via.placeholder.com/600x400?text=Imagem+4');
+            flex: 1;
+        }
+        .disclaimer {
+            font-size: 12px;
+            margin-top: 15px;
+            color: #ccc;
+        }
+        .chat-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Quer se tornar um Afiliado?</h1>
-      <p class="subtitle">Fale comigo no WhatsApp e eu te explico como funciona o Programa de Afiliados Protege TODOS.</p>
 
-      <!-- Botão principal (troque o número no script.js) -->
-      <div class="cta-row">
-        <button id="wa-open" class="btn btn-primary" aria-label="Abrir WhatsApp">
-          💬 Falar no WhatsApp
-        </button>
-
-        <!-- opcional: permite a pessoa enviar uma mensagem personalizada antes de abrir -->
-        <input id="prefill" class="input" type="text" placeholder="Digite sua mensagem (opcional)" />
-      </div>
-
-      <p class="note">Ao clicar, o WhatsApp abrirá em uma nova aba ou no app do celular.</p>
+    <div class="header">
+        <div class="logo">Protege Todos</div>
+        <div class="menu">
+            <a href="#">Ínicio</a>
+            <a href="#">Afiliado</a>
+            <a href="#">Sobre Nós</a>
+        </div>
     </div>
-  </header>
 
-  <!-- Botão flutuante no canto inferior direito -->
-  <button id="wa-float" class="wa-float" title="Abrir WhatsApp">💬</button>
+    <div class="hero">
+        <div class="hero-image"></div>
+        <div class="hero-image"></div>
+    </div>
 
-  <script src="script.js" defer></script>
+    <div class="content">
+        <h2>Quer se tornar um Afiliado?</h2>
+        <p>Fale comigo no WhatsApp e eu te explico como funciona o Programa de Afiliados Protege TODOS.</p>
+        <a href="https://api.whatsapp.com/send?phone=5511999999999" class="whatsapp-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20">
+            Falar no WhatsApp
+        </a>
+        <div class="input-group">
+            <input type="text" placeholder="Digite sua mensagem (opcional)">
+        </div>
+        <p class="disclaimer">Ao clicar, o WhatsApp abrirá em uma nova aba ou no app do celular.</p>
+    </div>
+
+    <div class="footer-images">
+        <div class="footer-image"></div>
+        <div class="footer-image"></div>
+    </div>
+
+    <div class="chat-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40">
+    </div>
+
 </body>
 </html>
