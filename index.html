@@ -1,68 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protege Todos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f0f2f5;
-            background-image: url('URL_DA_SUA_IMAGEM_DE_FUNDO.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        .header {
-            background-color: #121f3d;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .menu a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            transition: color 0.3s;
-        }
-        .menu a:hover {
-            color: #25d366;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 20px;
-            gap: 10px;
-        }
-        .hero-image {
-            width: 100%;
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-            border-radius: 8px;
-        }
-        .hero-image:first-child {
-            background-image: url('https://via.placeholder.com/600x400?text=Imagem+1');
-            flex: 1;
-        }
-        .hero-image:nth-child(2) {
-            background-image: url('https://via.placeholder.com/600x400?text=Imagem+2');
-            flex: 1;
-        }
-        .content {
-            background-color: #1a2c58;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 8px;
-            margin: 20px;
-        }
-        .content h2 {
-            font
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato via WhatsApp — Protege TODOS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Quer se tornar um Afiliado?</h1>
+      <p class="subtitle">Fale comigo no WhatsApp e eu te explico como funciona o Programa de Afiliados Protege TODOS.</p>
+
+      <!-- Botão principal (troque o número no script.js) -->
+      <div class="cta-row">
+        <button id="wa-open" class="btn btn-primary" aria-label="Abrir WhatsApp">
+          💬 Falar no WhatsApp
+        </button>
+
+        <!-- opcional: permite a pessoa enviar uma mensagem personalizada antes de abrir -->
+        <input id="prefill" class="input" type="text" placeholder="Digite sua mensagem (opcional)" />
+      </div>
+
+      <p class="note">Ao clicar, o WhatsApp abrirá em uma nova aba ou no app do celular.</p>
+    </div>
+  </header>
+
+  <!-- Botão flutuante no canto inferior direito -->
+  <button id="wa-float" class="wa-float" title="Abrir WhatsApp">💬</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
